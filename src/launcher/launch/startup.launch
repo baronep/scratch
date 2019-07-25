@@ -1,0 +1,3 @@
+<launch>
+  <node name="spammer" pkg="spammer" type="spammer_node"/>
+</launch>
