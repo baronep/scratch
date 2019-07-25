@@ -1,3 +1,5 @@
+This is also tied to a public Dockerhub repo. Anytime a new master branch is pushed, it will autobuild on Dockerhub's website ... https://cloud.docker.com/repository/docker/baronep/scratch/general
+
 # scratch
 
 Build docker image (also builds ROS stack)
