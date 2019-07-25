@@ -5,7 +5,6 @@ source /opt/ros/kinetic/setup.bash
 cd /code
 if [ "$MAKE_ISOLATED" = "true" ]; then
     echo "MAKING ISOLATED"
-    exit 1
     catkin_make_isolated
     catkin_make_isolated test
     catkin_make_isolated install
