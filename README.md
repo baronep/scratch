@@ -1,6 +1,5 @@
-Continuous Integration: [![Build Status]
+Continuous Integration: [![Build Status](https://travis-ci.com/baronep/scratch.svg?branch=master)](https://travis-ci.com/baronep/scratch)
 
-(https://travis-ci.com/baronep/scratch.svg?branch=master)](https://travis-ci.com/baronep/scratch)
 This is also tied to a public Dockerhub repo. Anytime a new master branch is pushed, it will autobuild on Dockerhub's website ... https://hub.docker.com/r/baronep/scratch
 
 # scratch
