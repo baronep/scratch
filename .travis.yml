@@ -6,7 +6,6 @@ services:
 before_install:
   - docker build -t test .
   - docker ps -a
-  - docker run -it test "./testit.sh"
 
 script:
-    sleep 1
+  - docker run -it test "./testit.sh"
