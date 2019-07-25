@@ -17,6 +17,11 @@ Run ros stack in the docker shell
 docker run -it customros "/runit.sh"
 ```
 
+Attach a new shell to a running container
+```
+docker exec -it customros "/bin/bash"
+```
+
 Run ros stack as a daemon
 ```
 docker run -itd --name customros customros "/runit.sh"
@@ -31,22 +36,18 @@ docker attach customros
 # Can press Ctrl+P + Ctrl+Q to detach from container
 ```
 
-Push docker image to dockerhub
-```
-docker push baronep/scratch:customros
-```
-
 Supply docker credentials to allow you to push/pull
 ```
 docker login
 ```
 
+Manually push docker image to dockerhub
+```
+# This is not really necessary as dockerhub will build a new image anytime master branch is updated
+docker push baronep/scratch:customros
+```
+
 Pull the latest autobuilt image from dockerhub
 ```
 docker pull baronep/scratch:latest
-```
-
-Attach a new shell to a running container
-```
-docker exec -it customros "/bin/bash"
 ```
