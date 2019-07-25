@@ -8,7 +8,7 @@ before_install:
   - docker ps -a
 
 script:
-  - docker run -it test "./testit.sh"
+    - docker run -e MAKE_ISOLATED="$MAKE_ISOLATED" -it test "./testit.sh"
 env:
     - MAKE_ISOLATED="true"
     - MAKE_ISOLATED="false"
