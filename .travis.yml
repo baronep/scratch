@@ -9,3 +9,6 @@ before_install:
 
 script:
   - docker run -it test "./testit.sh"
+env:
+    - MAKE_ISOLATED="true"
+    - MAKE_ISOLATED="false"
