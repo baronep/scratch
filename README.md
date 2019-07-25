@@ -47,7 +47,7 @@ Manually push docker image to dockerhub
 docker push baronep/scratch:customros
 ```
 
-Pull the latest autobuilt image from dockerhub
+Pull and run the latest autobuilt image from dockerhub
 ```
-docker pull baronep/scratch:latest
+docker run -it baronep/scratch:latest
 ```
