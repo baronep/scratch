@@ -1,3 +1,6 @@
 #!/bin/bash
-sleep 1
-exit 1
+set -e
+
+source /opt/ros/kinetic/setup.bash
+cd /code
+catkin_make test
